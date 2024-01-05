@@ -3,17 +3,38 @@
 <head>
     <link rel="stylesheet" href="re1.css">
     <style>
-        table{
+        .table1{
+            background-color: lightskyblue;
+            margin: 10px;
+        }
+        .table2{
+            background-color: lightskyblue;
+            margin: 10px;
+        }
+        
+        table,th,td{
+            border:1px double blue;
+        }
+       table{
             border-collapse: collapse;
+           /* display:block; */
+            margin: 5px 5px ;
+            background-color:lightblue;
+        }
+        main{
+            display:flex;
         }
     </style>
+   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>re1</title>
 </head>
 <body>
-    <h2>This is the simple table</h2>
-    <table>
+    <main>
+        <div class="table1"><table>
+    <h2>This is the simple table<br>সাধারন টেবিল</h2>
+   
         <tr>
             <th>
                 Name
@@ -24,9 +45,20 @@
             <th>Phone Number</th>
         </tr>
         <tr>
-            <td>Dhruba Biswas</td><td rowspan="3">1k</td><td>01641024545</td></tr>
-            <tr><td>01746314371</td></tr><tr><td>01405932075</td></tr>
-    </table>
-    
+            <td rowspan="3" >Dhruba Biswas</td> <td rowspan="3">1k</td><td>01746314371</td><!-- এখানে দুই যায়গায় <td> তে rowspan="3" দেওয়া হয়েছে এর মানে হচ্ছে ওই দুটো tabel deta একসাথে পাশাপাশি ৩ টা সারি(row) er যায়গা নিবে যেখানে আমার গ্রামীন নাম্বার আগে থেকেই একটা সারি তে রয়েছে পরবর্তীতে এয়ারটেল এবং বাংলালিংক দিয়ে আরো দুটি সারির যায়গা ফিলাপ করা হয়েছ এ  -->
+        </tr>
+        <tr><td>01641024545</td></tr><tr><td>01405932075</td></tr>
+            
+    </table></div>
+    <div class="table2">
+        <h2>এখানে স্প্যান বিষয়টা একটু বিস্তারিত<br>  বোঝারজন্য এটি করা হয়েছে </h2>
+    <table>
+        <tr><th>Name</th><th>Salary</th></tr>
+        <tr><td>Dhruba Biswas</td><td rowspan="3" > 1k </td></tr>
+        <tr><td>Moga Biswas</td></tr>
+        <tr><td>Joga Biswas</td></tr>
+        <tr><td colspan="2" > এখানে একজন আছে যে কিনা all-rounder </td></tr>
+    </table></div>
+</main>
 </body>
 </html>     
